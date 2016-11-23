@@ -1,0 +1,240 @@
+@import "normalize";
+@import "layout";
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,800');
+
+$primary-font: "Raleway", sans-serif;
+
+body{
+	font: 400 17px/1.5 "Raleway", sans-serif;
+}
+
+
+
+/* Layout */
+.ba-container{
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 1200px;
+}
+
+
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+	background-color:  #ff6033;
+	box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+	width: 200px;
+	height: 55px;
+	text-transform: uppercase;
+	color: #FFF;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+	opacity: 0.7;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+textarea {
+
+}
+
+.ba-fresh {
+	background: #FFF url("../img/firstbg.jpg") 50% no-repeat;
+	background-size: cover;
+	min-height: 100vh;
+	padding: 50px 0;
+	position: relative;
+}
+.ba-logo {
+	float: left;
+}
+
+.ba-header-nav {
+	float: right;
+}
+
+.ba-menu {
+	list-style: none;
+	padding: 0;
+	float: right;
+	height: 90px;
+	a {
+	font-family: $primary-font;
+	color:  #262626;
+	font-size: 16px;
+	font-weight: 700;
+	text-decoration: none;
+	padding-left: 30px;
+	text-transform: uppercase;
+	border-top: 3px solid #ff6033;
+	margin: 0 10px;
+	}
+	a:hover {
+	color: #D2456D;
+	}
+	li {
+	float: left;
+	}
+}
+
+
+.ba-fresh_first-content {
+	float: left;
+	width: 50%;
+	h2 {
+	color:  #262626;
+	font-size: 60px;
+	font-weight: 800;
+	}
+	p {
+	color:  #262626;
+	font-size: 17px;
+	font-weight: 300;
+	margin-bottom: 30px;
+	}
+}
+
+.ba-scroll {
+	position: absolute;
+	background: url("../img/scroll.png") no-repeat 50%;
+	width: 24px;
+	height: 40px;
+    bottom: 60px;
+    transition: transform .2s ease-in;
+    &:hover {
+    transform: translateY(-10px);
+    }
+}
+
+/* ba-about */
+
+.ba-about {
+	background-color: #19BDBD;
+}
+
+.ba-image {
+	float: left;
+	width: 50%;
+}
+.ba-about__content {
+	float: right;
+	width: 50%;
+	h3 {
+	color:  #ffffff;
+	font-size: 90px;
+	font-weight: 700;
+	margin-bottom: 30px;
+	}
+	p {
+	color:  #ffffff;
+	font-size: 17px;
+	font-weight: 300;
+	}
+}
+.ba-second-content {
+	padding: 135px 0 100px 100px;
+}
+
+/* ba-services */
+
+.ba-services {
+	background-color: #6FBEFD;
+}
+
+.ba-list {
+	float: left;
+	width: 50%;
+	padding: 76px 0 0 100px;
+}
+.ba-servi li {
+	background-color:  #ffffff;
+	box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
+	width: 400px;
+	height: 100px;
+	list-style: none;
+}
+
+.ba-service {
+	display: inline-block;
+	h4 {
+	color:  #262626;
+	font-size: 20px;
+	font-weight: 700;
+	text-align: center;
+    vertical-align: middle;
+	}
+}
+.ba-icon {
+	display: inline-block;
+    height: 100px;
+    width: 100px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    border-left: 1px solid #9D9D9D;
+    vertical-align: middle;
+	&__images-shopping {
+	background-image: url("../img/shopping.svg");
+	}
+	&__images-quality {
+	background-image: url("../img/quality.svg");
+	}
+	&__images-domestic {
+	background-image: url("../img/domestic.svg");
+	}
+	&__images-welloz {
+	background-image: url("../img/welloz.svg");
+	}
+
+}
+
+
+.ba-tomato {
+	float: right;
+	width: 50%;
+	padding-left: 30px;
+	h4 {
+	color:  #ffffff;
+	font-size: 90px;
+	font-weight: 700;
+	text-align: center;
+    padding: 220px 0;
+    color: #fff;
+    background: url("../img/img.png") no-repeat;
+    }
+}
