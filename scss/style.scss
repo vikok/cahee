@@ -81,6 +81,7 @@ textarea {
 	padding: 50px 0;
 	position: relative;
 }
+
 .ba-logo {
 	float: left;
 }
@@ -100,13 +101,13 @@ textarea {
 	font-size: 16px;
 	font-weight: 700;
 	text-decoration: none;
-	padding-left: 30px;
+	padding-bottom: 10px;
 	text-transform: uppercase;
-	border-top: 3px solid #ff6033;
+	border-top: 3px solid #fff;
 	margin: 0 10px;
 	}
 	a:hover {
-	color: #D2456D;
+	border-top: 3px solid #FF6033;
 	}
 	li {
 	float: left;
@@ -193,6 +194,7 @@ textarea {
 .ba-service {
 	display: inline-block;
 	h4 {
+	display: inline-block;
 	color:  #262626;
 	font-size: 20px;
 	font-weight: 700;
