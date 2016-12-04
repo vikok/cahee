@@ -96,6 +96,7 @@ textarea {
 	padding: 50px 0;
 	position: relative;
 }
+
 .ba-logo {
 	float: left;
 }
@@ -115,6 +116,7 @@ textarea {
 	font-size: 16px;
 	font-weight: 700;
 	text-decoration: none;
+	padding-bottom: 10px;
 	text-transform: uppercase;
 	border-top: 3px solid #fff;
 	margin: 0 10px;
@@ -122,6 +124,7 @@ textarea {
 	a:hover {
 	border-color: #ff6033;
 	margin-bottom: 9px;
+	border-top: 3px solid #FF6033;
 	}
 	li {
 	float: left;
@@ -204,6 +207,7 @@ textarea {
 	display: inline-block;
 	font-size: 0;
 	h4 {
+	display: inline-block;
 	color:  #262626;
 	font-size: 20px;
 	font-weight: 700;
