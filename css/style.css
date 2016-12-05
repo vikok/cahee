@@ -1214,6 +1214,11 @@ select:focus {
   position: relative;
 }
 
+.ba-smooshie a {
+  color: #fff;
+  text-decoration: none;
+}
+
 .ba-smooshie__overlay {
   position: absolute;
   left: 0;
@@ -1262,6 +1267,11 @@ select:focus {
   position: relative;
 }
 
+.ba-soup a {
+  color: #fff;
+  text-decoration: none;
+}
+
 .ba-soup__overlay {
   position: absolute;
   left: 0;
@@ -1308,6 +1318,11 @@ select:focus {
 
 .ba-boxis {
   position: relative;
+}
+
+.ba-boxis a {
+  color: #fff;
+  text-decoration: none;
 }
 
 .ba-boxis__overlay {
