@@ -977,7 +977,7 @@ select {
   float: left;
 }
 
-.ba-menu__button {
+.ba-menu_button {
   display: inline-block;
   position: relative;
   width: 20px;
