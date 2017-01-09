@@ -1374,7 +1374,7 @@ select {
   padding: 100px 0 120px;
 }
 
-.ba-contact h3 {
+.ba-contact__title {
   color: #262626;
   font-size: 90px;
   font-weight: 700;
@@ -1443,6 +1443,7 @@ select {
   color: #b9b9b9;
   padding: 30px 0;
   font-size: 16px;
+  text-align: center;
 }
 
 .ba-footer__content {
@@ -1464,8 +1465,11 @@ select {
   text-decoration: underline;
 }
 
+<<<<<<< HEAD
 .ba-footer-logo {
   padding-left: 80px;
 }
 
+=======
+>>>>>>> master
 /*# sourceMappingURL=style.css.map */
