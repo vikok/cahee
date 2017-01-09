@@ -40,6 +40,8 @@ button,
 	height: 55px;
 	text-transform: uppercase;
 	color: #FFF;
+	border: none;
+	outline: none;
 }
 input[type="submit"]:hover,
 input[type="button"]:hover,
@@ -62,10 +64,11 @@ select {
     line-height: 48px;
     border: 1px solid #848789;
     padding: 0 30px;
-    font-size: 15px;
-    font-weight: 300;
+    font-style: italic;
+    font-weight: 400;
     vertical-align: middle;
     width: 570px;
+
 
 	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
 	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
@@ -78,16 +81,14 @@ input[type="password"]:focus,
 input[type="number"]:focus,
 input[type="tel"]:focus,
 textarea:focus{
-	outline-color: #00C4C4;
-	background-color:  #00c4c4;
-	border-left: 5px solid #355b82;
+
 }
 select:focus {
-	outline-color: #95B82C;
 }
 textarea {
 
 }
+
 
 .ba-fresh {
 	background: #FFF url("../img/firstbg.jpg") 50%;
@@ -118,7 +119,7 @@ textarea {
 	text-decoration: none;
 	padding-bottom: 10px;
 	text-transform: uppercase;
-	border-top: 3px solid #fff;
+	border-top: 3px solid transparent;
 	margin: 0 10px;
 	}
 	a:hover {
@@ -129,6 +130,14 @@ textarea {
 	li {
 	float: left;
 	}
+}
+.ba-menu_button{
+	display: inline-block;
+	position: relative;
+	width: 20px;
+	height: 30px;
+	color: black;
+
 }
 
 
@@ -167,28 +176,20 @@ textarea {
 .ba-about {
 	background-color: #19BDBD;
 }
-
-.ba-image {
-	float: left;
-	width: 50%;
-}
 .ba-about__content {
-	float: right;
-	width: 50%;
+	padding: 115px 0 100px 100px;
 	h3 {
 	color:  #ffffff;
 	font-size: 90px;
 	font-weight: 700;
 	margin-bottom: 30px;
+	margin-top: 0;
 	}
 	p {
 	color:  #ffffff;
 	font-size: 17px;
 	font-weight: 300;
 	}
-}
-.ba-second-content {
-	padding: 135px 0 100px 100px;
 }
 
 /* ba-services */
@@ -198,8 +199,6 @@ textarea {
 }
 
 .ba-list {
-	float: left;
-	width: 50%;
 	padding: 76px 0 0 100px;
 }
 
@@ -254,8 +253,6 @@ textarea {
 
 
 .ba-tomato {
-	float: right;
-	width: 50%;
 	padding-left: 30px;
 	h3 {
 	color:  #ffffff;
@@ -274,6 +271,9 @@ textarea {
 	background-color:  #ffe92f;
 	text-align: center;
 	padding: 100px 0 120px;
+	img{
+	box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
+	}
 	h3 {
 	color:  #262626;
 	font-size: 90px;
@@ -309,10 +309,15 @@ textarea {
 	font-size: 17px;
 	font-weight: 300;
 	}
+	input{
+		border: 1px solid ;
+		min-height: 53px;
+		line-height: 53px;
+		padding: 0 15px;
+		&:focus{
+		border: #91A84F;
+		}
 }
-.ba-button__subscribe {
-	background-color:  #96b92c;
-	margin-left: 30px;
 }
 
 /* ba-blog */
@@ -347,7 +352,7 @@ background: linear-gradient(rgba(175,123,245,1) 0%, rgba(175,123,245,1) 100%);
 	top: 0;
 	right: 0;
 	bottom: 0;
-	opacity: 0;
+	opacity: 1;
 	transition: .3s ease-in;
 	}
 	&__date {
@@ -394,7 +399,7 @@ background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.76) 100%);
 	top: 0;
 	right: 0;
 	bottom: 0;
-	opacity: 0;
+	opacity: 1;
 	transition: .3s ease-in;
 	}
 	&__date {
@@ -441,7 +446,7 @@ background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.76) 100%);
 	top: 0;
 	right: 0;
 	bottom: 0;
-	opacity: 0;
+	opacity: 1;
 	transition: .3s ease-in;
 	}
 	&__date {
@@ -512,6 +517,8 @@ background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.76) 100%);
 	text-decoration: none;
 	padding-right: 150px;
 	border-left: 5px solid transparent;
+	outline: transparent;
+
 	&:focus{
 	background-color:  #00c4c4;
 	border-left: 5px solid #355b82;
@@ -519,6 +526,7 @@ background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.76) 100%);
 }
 .ba-textarea {
 	height: 250px;
+	line-height: 1.1;
 }
 
 .ba-contact__info {
@@ -550,16 +558,13 @@ background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.76) 100%);
 .ba-footer {
 	background-color:  #262626;
 	min-height: 90px;
+    color: #b9b9b9;
+    padding: 30px 0;
+    font-size: 16px;
 	&__content{
 	color:  #b9b9b9;
 	font-size: 16px;
 	font-weight: 300;
-	line-height: 90px;
-	}
-	&__logo{
-	text-align: center;
-	line-height: 90px;
-	vertical-align: middle;
 	}
 	span{
 	color:  #ff2b58;
@@ -571,4 +576,7 @@ background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.76) 100%);
 	&__author:hover{
 	text-decoration: underline;
 	}
+}
+.ba-footer-logo{
+    padding-left: 80px;
 }

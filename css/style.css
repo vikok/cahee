@@ -898,6 +898,8 @@ button,
   height: 55px;
   text-transform: uppercase;
   color: #FFF;
+  border: none;
+  outline: none;
 }
 
 input[type="submit"]:hover,
@@ -923,26 +925,11 @@ select {
   line-height: 48px;
   border: 1px solid #848789;
   padding: 0 30px;
-  font-size: 15px;
-  font-weight: 300;
+  font-style: italic;
+  font-weight: 400;
   vertical-align: middle;
   width: 570px;
   transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
-}
-
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="password"]:focus,
-input[type="number"]:focus,
-input[type="tel"]:focus,
-textarea:focus {
-  outline-color: #00C4C4;
-  background-color: #00c4c4;
-  border-left: 5px solid #355b82;
-}
-
-select:focus {
-  outline-color: #95B82C;
 }
 
 .ba-fresh {
@@ -976,7 +963,7 @@ select:focus {
   text-decoration: none;
   padding-bottom: 10px;
   text-transform: uppercase;
-  border-top: 3px solid #fff;
+  border-top: 3px solid transparent;
   margin: 0 10px;
 }
 
@@ -988,6 +975,14 @@ select:focus {
 
 .ba-menu li {
   float: left;
+}
+
+.ba-menu__button {
+  display: inline-block;
+  position: relative;
+  width: 20px;
+  height: 30px;
+  color: black;
 }
 
 .ba-fresh_first-content {
@@ -1032,14 +1027,8 @@ select:focus {
   background-color: #19BDBD;
 }
 
-.ba-image {
-  float: left;
-  width: 50%;
-}
-
 .ba-about__content {
-  float: right;
-  width: 50%;
+  padding: 115px 0 100px 100px;
 }
 
 .ba-about__content h3 {
@@ -1047,6 +1036,7 @@ select:focus {
   font-size: 90px;
   font-weight: 700;
   margin-bottom: 30px;
+  margin-top: 0;
 }
 
 .ba-about__content p {
@@ -1055,18 +1045,12 @@ select:focus {
   font-weight: 300;
 }
 
-.ba-second-content {
-  padding: 135px 0 100px 100px;
-}
-
 /* ba-services */
 .ba-services {
   background-color: #6FBEFD;
 }
 
 .ba-list {
-  float: left;
-  width: 50%;
   padding: 76px 0 0 100px;
 }
 
@@ -1125,8 +1109,6 @@ select:focus {
 }
 
 .ba-tomato {
-  float: right;
-  width: 50%;
   padding-left: 30px;
 }
 
@@ -1145,6 +1127,10 @@ select:focus {
   background-color: #ffe92f;
   text-align: center;
   padding: 100px 0 120px;
+}
+
+.ba-gallery img {
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
 .ba-gallery h3 {
@@ -1185,9 +1171,15 @@ select:focus {
   font-weight: 300;
 }
 
-.ba-button__subscribe {
-  background-color: #96b92c;
-  margin-left: 30px;
+.ba-subscribe input {
+  border: 1px solid;
+  min-height: 53px;
+  line-height: 53px;
+  padding: 0 15px;
+}
+
+.ba-subscribe input:focus {
+  border: #91A84F;
 }
 
 /* ba-blog */
@@ -1225,7 +1217,7 @@ select:focus {
   top: 0;
   right: 0;
   bottom: 0;
-  opacity: 0;
+  opacity: 1;
   transition: .3s ease-in;
 }
 
@@ -1278,7 +1270,7 @@ select:focus {
   top: 0;
   right: 0;
   bottom: 0;
-  opacity: 0;
+  opacity: 1;
   transition: .3s ease-in;
 }
 
@@ -1331,7 +1323,7 @@ select:focus {
   top: 0;
   right: 0;
   bottom: 0;
-  opacity: 0;
+  opacity: 1;
   transition: .3s ease-in;
 }
 
@@ -1407,6 +1399,7 @@ select:focus {
   text-decoration: none;
   padding-right: 150px;
   border-left: 5px solid transparent;
+  outline: transparent;
 }
 
 .ba-contact__form:focus {
@@ -1416,6 +1409,7 @@ select:focus {
 
 .ba-textarea {
   height: 250px;
+  line-height: 1.1;
 }
 
 .ba-contact__info span {
@@ -1446,19 +1440,15 @@ select:focus {
 .ba-footer {
   background-color: #262626;
   min-height: 90px;
+  color: #b9b9b9;
+  padding: 30px 0;
+  font-size: 16px;
 }
 
 .ba-footer__content {
   color: #b9b9b9;
   font-size: 16px;
   font-weight: 300;
-  line-height: 90px;
-}
-
-.ba-footer__logo {
-  text-align: center;
-  line-height: 90px;
-  vertical-align: middle;
 }
 
 .ba-footer span {
@@ -1472,6 +1462,10 @@ select:focus {
 
 .ba-footer__author:hover {
   text-decoration: underline;
+}
+
+.ba-footer-logo {
+  padding-left: 80px;
 }
 
 /*# sourceMappingURL=style.css.map */

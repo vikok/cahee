@@ -39,48 +39,50 @@
 					</ul>
 		</nav>
 		</div>
+		<div class="ba-menu__button"></div>
+	</header>
 		<!-- BEGIN ba-fresh_first-content  -->
-		<div class="ba-fresh_first-content сf">
+		<div class="ba-fresh_first-content ba-width-medium-1-3">
 		    <h2>Fresh Life</h2>
 			<p>Sed do eiusmod tempor incididunt ut labore et<br> dolore magna aliqua. Ut enim ad minim veniam,<br> quis nostrud exercitation ullamco.</p>
 			<button class="ba-button" type="submit">get free now</button>
 		</div>
 		<!-- END ba-fresh_first-content -->
-	</header>
+	<a href="#about" class="ba-scroll"></a>
 	</div>
 	<!-- END ba-container -->
-	<a href="#about" class="ba-scroll"></a>
 </div>
 <!-- END ba-fresh -->
 	<main>
 		<section id="about" class="ba-about">
-			<!-- BEGIN ba-container  -->
-			<div class="ba-container cf">
-			   <!-- BEGIN ba-image  -->
-			   <div class="ba-image">
-			       <img src="img/malina.png" alt="malina">
-			   </div>
-			   <!-- END ba-image -->
-			   <!-- BEGIN ba-about__second-content  -->
-			   <div class="ba-about__content">
-			   <!-- BEGIN ba-second-content  -->
-			   <div class="ba-second-content">
-			       <h3>About Us</h3>
-			       <p>Abore Cahee magna aliqua. Ut enim ad minim veniam, quis<br> nostrud exercitation ullamco laboris nisi ut aliquip ex ea<br> commodo consequat. Duis aute irure dolor in<br> reprehenderit in voluptate velit esse cillum.</p>
-			       <p>Nim id est laborum. Sed ut perspiciatis unde omnis iste natus<br> error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.</p>
-			   </div>
-			   <!-- END ba-second-content -->
-			   </div>
-			   <!-- END ba-about__second-content -->
+			<div class="ba-container">
+				<!-- BEGIN ba-grid  -->
+				<div class="ba-row ba-row-nopad">
+				    <div class="ba-width-medium-1-2">
+				    	<img src="img/malina.png" alt="malina">
+				    </div>
+				    <div class="ba-width-medium-1-2 ba-float-right">
+				    	<div class="ba-about__content">
+							<h3 class="ba-about__title">About Us</h3>
+							<p>Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+							<p>Nim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.</p>
+				    	</div>
+				    </div>
+				</div>
+				<!-- END ba-grid -->
 			</div>
-			<!-- END ba-container -->
 		</section>
+
 
 		<section id="services" class="ba-services">
 			<!-- BEGIN ba-container  -->
 			<div class="ba-container cf">
+
+			<!-- BEGIN ba-row  -->
+			<div class="ba-row">
+
 			    <!-- BEGIN ba-list  -->
-			    <div class="ba-list">
+			    <div class="ba-list ba-width-medium-1-2">
 					<ul class="ba-servi">
 						<li class="ba-service">
 							<h4>Online Shopping</h4>
@@ -103,11 +105,13 @@
 			    <!-- END ba-list -->
 
 			    <!-- BEGIN ba-tomato  -->
-			    <div class="ba-tomato">
+			    <div class="ba-tomato ba-width-medium-1-2">
 			        <h3>Our Services</h3>
 			    </div>
 			    <!-- END ba-tomato -->
 
+			</div>
+			<!-- END ba-row -->
 			</div>
 			<!-- END ba-container -->
 		</section>
@@ -120,17 +124,17 @@
 				<!-- BEGIN ba-row  -->
 				<div class="ba-row">
 					<!-- BEGIN ba-width-2-3  -->
-					<div class="ba-width-2-3">
+					<div class="ba-width-medium-2-3">
 					    <img src="img/pineapple.jpg" alt="pineapple">
 					</div>
 					<!-- END ba-width-2-3 -->
 
 				<!-- BEGIN ba-width-1-3  -->
-				<div class="ba-width-1-3">
+				<div class="ba-width-medium-1-3">
 				<!-- BEGIN ba-row  -->
 				<div class="ba-row">
 				    <!-- BEGIN ba-width-1-  -->
-					<div class="ba-width-1-1">
+					<div class="ba-width-medium-1-1">
 					    <img src="img/blueberry.jpg" alt="blueberry">
 					</div>
 					<!-- END ba-width-1-2 -->
@@ -139,7 +143,7 @@
 				<!-- BEGIN ba-row  -->
 				<div class="ba-row">
 				    <!-- BEGIN ba-width-1-2  -->
-				    <div class="ba-width-1-1">
+				    <div class="ba-width-medium-1-1">
 				        <img src="img/blackmulberry.jpg" alt="blackmulberry">
 				    </div>
 				    <!-- END ba-width-1-2 -->
@@ -153,12 +157,12 @@
 				<!-- BEGIN ba-row  -->
 				<div class="ba-row">
 				    <!-- BEGIN ba-width-1-2  -->
-				    <div class="ba-width-1-2">
+				    <div class="ba-width-medium-1-2">
 				        <img src="img/milk.jpg" alt="milk">
 				    </div>
 				    <!-- END ba-width-1-2 -->
 				    <!-- BEGIN ba-width-1-2  -->
-				    <div class="ba-width-1-2">
+				    <div class="ba-width-medium-1-2">
 				        <img src="img/persimmon.jpg" alt="persimmon">
 				    </div>
 				    <!-- END ba-width-1-2 -->
@@ -177,7 +181,7 @@
 			    <p>Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<br> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
 			    <form action="#" method="post">
 						<input type="email" name="email" required placeholder="Your email address...">
-						<button class="ba-button ba-button__subscribe" type="submit">SUBSCRIBE</button>
+						<button class="ba-button" type="submit">SUBSCRIBE</button>
 					</form>
 			</div>
 			<!-- END ba-container -->
@@ -192,7 +196,7 @@
 			    <!-- BEGIN ba-row  -->
 			    <div class="ba-row">
 			        <!-- BEGIN ba-width-1-3  -->
-			        <div class="ba-width-1-3">
+			        <div class="ba-width-medium-1-3">
 			        <!-- BEGIN ba-smooshie  -->
 			        <div class="ba-smooshie">
 			             <img src="img/fresh.jpg" alt="fresh">
@@ -215,7 +219,7 @@
 			        <!-- END ba-width-1-3 -->
 
 			        <!-- BEGIN ba-width-1-3  -->
-			        <div class="ba-width-1-3">
+			        <div class="ba-width-medium-1-3">
 			        <!-- BEGIN ba-soup  -->
 			        <div class="ba-soup">
 			            <img src="img/soup.jpg" alt="soup">
@@ -238,7 +242,7 @@
 			        <!-- END ba-width-1-3 -->
 
 			        <!-- BEGIN ba-width-1-3  -->
-			        <div class="ba-width-1-3">
+			        <div class="ba-width-medium-1-3">
 			        <!-- BEGIN ba-boxis  -->
 			        <div class="ba-boxis">
 			            <img src="img/boxis.jpg" alt="boxis">
@@ -277,18 +281,19 @@
 			    <!-- BEGIN ba-row  -->
 			    <div class="ba-row">
 			        <!-- BEGIN ba-width-1-2  -->
-			        <div class="ba-width-1-2">
+			        <div class="ba-width-medium-1-2">
 			            <form action="#" method="post">
 			            	<input class="ba-contact__form" type="text" name="name" required placeholder="Your name...">
 							<input class="ba-contact__form" type="email" name="email" required placeholder="Your email...">
 							<input class="ba-contact__form" type="tel" name="email" required placeholder="Your phone number...">
 							<textarea  class="ba-contact__form ba-textarea" placeholder="Your message..."></textarea>
+							<button class="ba-button ba-button__contact" type="submit">SEND</button>
 			            </form>
 			        </div>
 			        <!-- END ba-width-1-2 -->
 
 			        <!-- BEGIN ba-width-1-2  -->
-			        <div class="ba-width-1-2">
+			        <div class="ba-width-medium-1-2">
 			        <!-- BEGIN ba-contact__info  -->
 			        <div class="ba-contact__info">
 			            <span>ADDRESS</span>
@@ -303,7 +308,7 @@
 			        <!-- END ba-width-1-2 -->
 			    </div>
 			    <!-- END ba-row -->
-			    <button class="ba-button ba-button__contact" type="submit">SEND</button>
+
 			</div>
 			<!-- END ba-container -->
 		</section>
@@ -320,8 +325,8 @@
 		        </div>
 		        <!-- END ba-width-1-3 -->
 		         <!-- BEGIN ba-width-1-3  -->
-		        <div class="ba-width-1-3 ba-footer__logo">
-		            <img src="img/logosmall.png" alt="logosmall">
+		        <div class="ba-width-1-3">
+		            <a href="#" class="ba-footer-logo"><img src="img/logosmall.png" alt="logosmall"></a>
 		        </div>
 		        <!-- END ba-width-1-3 -->
 		         <!-- BEGIN ba-width-1-3  -->
